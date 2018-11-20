@@ -1,2 +1,11 @@
+spring:
+  application:
+    name: sc-zuul
+
 server:
-  port: 7864
+  port: 8764
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

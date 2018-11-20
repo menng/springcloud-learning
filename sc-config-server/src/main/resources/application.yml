@@ -1,2 +1,18 @@
+spring:
+  application:
+    name: sc-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/menng/springcloud-learning
+          basedir: config-repo
+          force-pull: true
+
 server:
-  port: 7862
+  port: 8762
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
