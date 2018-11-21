@@ -10,3 +10,7 @@
 #### 业务项目
 - sc-bs-ping
 - sc-bs-pong 
+
+### 快速开始
+- 分别启动
+- 访问`http://localhost:8082/city/list`
