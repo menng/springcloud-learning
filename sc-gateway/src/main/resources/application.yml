@@ -7,11 +7,19 @@ spring:
         locator:
           enabled: true
       routes:
-      - id: sc-bs-ping
-        uri: lb://sc-bs-ping
-        predicates:
-        - Path=/ping/**
+        - id: sc-bs-ping
+          uri: lb://sc-bs-ping
+          predicates:
+            - Path=/ping/**
+          filters:
+            - RewritePath=/ping/(?<segment>.*), /$\{segment}
 
+        - id: sc-bs-pong
+          uri: lb://sc-bs-pong
+          predicates:
+            - Path=/pong/**
+          filters:
+            - RewritePath=/pong/(?<segment>.*), /$\{segment}
 server:
   port: 8763
 
