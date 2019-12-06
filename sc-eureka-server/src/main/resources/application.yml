@@ -13,3 +13,8 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    # 关闭保护机制，默认是true
+    enable-self-preservation: false
+    # 剔除无效服务时间，默认是60秒；从服务列表剔除无效服务的定时任务，并不会主动向客户端发送心跳检测。
+    eviction-interval-timer-in-ms: 5000

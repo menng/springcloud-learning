@@ -6,6 +6,16 @@ server:
   port: 8082
 
 eureka:
+  instance:
+    # 以IP地址形式注册到注册中心
+    prefer-ip-address: true
+    # Eureka客户端向服务端发送心跳的时间间隔。
+    lease-renewal-interval-in-seconds: 5
+    # Eureka服务端收到最后一次心跳之后等待时间，过了此时间无心跳，则剔除此服务。
+    lease-expiration-duration-in-seconds: 15
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+    # 定期向服务端拉取其他客户端服务列表的时间间隔
+    registry-fetch-interval-seconds: 5
