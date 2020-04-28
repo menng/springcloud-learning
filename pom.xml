@@ -16,6 +16,7 @@
         <module>sc-eureka-server</module>
         <module>sc-gateway</module>
         <module>sc-zuul</module>
+        <module>sc-zookeeper</module>
     </modules>
 
     <parent>
@@ -55,7 +56,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <repositories>
+<!--    <repositories>
         <repository>
             <id>spring-milestones</id>
             <name>Spring Milestones</name>
@@ -64,7 +65,7 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
-    </repositories>
+    </repositories>-->
 
     <build>
         <plugins>

@@ -6,6 +6,7 @@
 - sc-eureka-server 注册中心
 - sc-gateway SpringCloud网关
 - sc-zuul Netflix网关
+- sc-zookeeper zk作为注册中心
 
 #### 业务项目
 - sc-bs-ping

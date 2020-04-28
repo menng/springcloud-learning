@@ -9,11 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 
-/**
- * TODO
- * @author mengxy
- * @create 2018/11/20 20:03
- */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
